@@ -50,5 +50,3 @@ allow_force_push() {
         curl --request DELETE --header "PRIVATE-TOKEN: ${GITLAB_TOKEN}" "${API_BASE_URL}/api/v4/projects/${id}/protected_branches/master"
     done < "data2.txt"
 }
-
-# create_repositories
